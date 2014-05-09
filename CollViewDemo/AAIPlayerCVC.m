@@ -27,7 +27,14 @@
 - (NSArray *)players
 {
     if (!_players) {
-        _players = @[@"one", @"two", @"three"];
+        _players = @[@{@"name": @"one",
+                       @"spikes": @(42)},
+                     @{@"name": @"two",
+                       @"spikes": @(0)},
+                     @{@"name": @"three",
+                       @"spikes": @(101)},
+                     @{@"name": @"four",
+                       @"spikes": @(2000)}];
     }
     return _players;
 }
@@ -41,7 +48,7 @@
 {
     
     AAIPlayerCVCell *cell = (AAIPlayerCVCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Player Cell" forIndexPath:indexPath];
-    cell.nameLabel.text = [NSString stringWithFormat:@"Player %@", self.players[indexPath.row]];
+    cell.player = self.players[indexPath.row];
     
     return cell;
 }

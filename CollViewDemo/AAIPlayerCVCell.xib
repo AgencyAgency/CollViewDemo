@@ -20,7 +20,7 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sJ5-mx-A6R">
+                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="sJ5-mx-A6R">
                         <rect key="frame" x="53" y="128" width="94" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <connections>
@@ -40,6 +40,7 @@
             <connections>
                 <outlet property="nameLabel" destination="kfY-g9-MUf" id="s0s-pm-kI9"/>
                 <outlet property="spikesLabel" destination="ZiI-gs-634" id="Syw-bD-g5f"/>
+                <outlet property="spikesStepper" destination="sJ5-mx-A6R" id="BQ8-Ad-eDB"/>
             </connections>
         </collectionViewCell>
     </objects>
