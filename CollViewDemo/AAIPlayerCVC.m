@@ -41,7 +41,7 @@
 {
     
     AAIPlayerCVCell *cell = (AAIPlayerCVCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"Player Cell" forIndexPath:indexPath];
-    cell.nameLabel.text = self.players[indexPath.row];
+    cell.nameLabel.text = [NSString stringWithFormat:@"Player %@", self.players[indexPath.row]];
     
     return cell;
 }

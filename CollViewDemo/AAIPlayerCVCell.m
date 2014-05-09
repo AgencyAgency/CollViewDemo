@@ -33,4 +33,9 @@
 }
 */
 
+- (IBAction)stepperValueChanged:(UIStepper *)sender
+{
+    NSUInteger spikesCount = (int)sender.value;
+    self.spikesLabel.text = [NSString stringWithFormat:@"Spikes: %i", spikesCount];
+}
 @end

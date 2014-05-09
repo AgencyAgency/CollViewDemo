@@ -11,5 +11,8 @@
 @interface AAIPlayerCVCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *spikesLabel;
+
+- (IBAction)stepperValueChanged:(UIStepper *)sender;
 
 @end
